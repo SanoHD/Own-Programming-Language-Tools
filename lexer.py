@@ -42,7 +42,7 @@ def lexer(line, linenumber):
                         elif ec == 1:
                             lexed.append({"value": e, "type": "float"})
                         else:
-                            error("Invalid float.")
+                            pass # Error: invalid float
                         e = ""
                     lexed.append({"value": letter, "type": "symbol"})
 
